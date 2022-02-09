@@ -20,7 +20,7 @@ MEAN STACK is a combination of the following components:
 
 To do that we click on the search box and type "EC2". Then we click on where it says "Virutal Servers in the Cloud":
 
-![EC2-lookup](./images/EC2-lookup4.png)
+![EC2-lookup](./images/EC2-lookup7.png)
 
 We can setup a EC2 free-tier instance such as the: "t2.micro family with Ubuntu Server 20.04 LTS HV". To do so we click on "Launch Instance" and select the previous mentioned free-tier instance:
 
@@ -224,3 +224,5 @@ Ultimately, we access our book register web application from the internet with o
 **NOTE**: Your localhost is your EC2 instance public-ipv4-address.
 
 ![book register website](./images/book-register-website.png)
+
+ Congrats!! We have just implemented a simple book register web form using a MEAN stack!
