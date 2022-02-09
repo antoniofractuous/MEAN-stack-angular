@@ -24,7 +24,7 @@ So, we can setup a EC2 free-tier instance such as the: t2.micro family with Ubun
 
 - Then we connect to our new instance through our terminal.
 
-If you have macOS you can just press 'cmd spacebar' and type in 'terminal' to open the terminal. 
+If you have macOS you can just press 'cmd spacebar' and type in 'terminal' to open the terminal.
 
 If you have Windows you will need to download an SSH client such as "Putty"or "MobaXterm" from their website. The following website includes information you on how to do so: 
 
@@ -37,9 +37,9 @@ https://www.clickittech.com/aws/connect-ec2-instance-using-ssh/
 
 We can see on the images below how to SSH into our EC2 instance:
 
-- We start out instance by selecting our instance and the clicking on "Instance State" then Click "Start instance"
+- We start out instance by selecting our instance and the clicking on "Instance State" then Click "Start instance".
 
-- Once our instance is running, we click on connect
+- Once our instance is running, we click on connect.
 
 ![start-instance](./images/start-instance.png)
 
