@@ -1,6 +1,6 @@
 # MEAN-stack-angular
 
-*Demonstration of how to implement a simple book register web form using a MEAN stack.*
+*Demonstration of how to implement a simple book register web form using a MEAN stack. The source code that I used for this project was retrieved from darey.io.*
 
     Happy learning!
 
@@ -14,11 +14,46 @@ MEAN STACK is a combination of the following components:
 
 - Angular (Front-end application framework) – Handles Client and Server Requests.
 
-- Node.js (JavaScript runtime environment) – Accepts requests and displays results to end user.
+- Node.js (JavaScript runtime environment) – Accepts requests and displays results to end user. 
 
-First, we sign into my AWS account and setup a new EC2 instance of t2.micro family with Ubuntu Server 20.04 LTS (HVM) • Save my private key • Connect to my EC2 instance through my Mac terminal.
+First, we need to sign into our AWS account and setup a new EC2 instance, a free-tier one such as: t2.micro family with Ubuntu Server 20.04 LTS HVM. We can name it 'MEAN-STACK'.
 
- We update the list of available packages:
+- We need to save the private key 
+
+- Then we connect to our new EC2 instance through our terminal.
+
+If you have macOS you can just press 'cmd spacebar' and type in 'terminal'. 
+
+If you have Windows you need to download an SSH client such as 'Putty'or MobaXterm' from their website. The following website includes information you on how to do so: 
+
+https://www.clickittech.com/aws/connect-ec2-instance-using-ssh/
+
+
+**NOTE**: You can get your ipv4 (public-ip address) from AWS:
+
+![ipv4](./images/ipv4.png)
+
+We can see on the images below to SSH into our EC2 instance:
+
+- We click on connect
+
+![connect-instance](./images/connect-instance2.png)
+
+- We click on the 'SSH client' tab and then copy the command that is under 'Example:'
+
+![ssh](./images/ssh-connect.png)
+
+Paste it into your terminal, input yes. If this is the first time that you are doing this, congratulations!! You have just launched your first server in the clouds!
+
+![EC2-instance](./images/EC2-instance.png)
+
+**NOTE**: Here is an explanation of the SSH command:
+
+`ssh -i <"private-key.pem" username>@<ipv4>`
+
+**NOTE**: *You can use either your EC2 instance's public address or DNS name.*
+
+ So once we SSH into our EC2 instance, we update the list of available packages:
 
 `sudo apt update`
 
@@ -26,15 +61,11 @@ We install newer version of the packages we have:
 
 `sudo apt upgrade`
 
- Now, we install node.js.
-
 ### **Installing Node.js** 
 
-We will be using Node.js to set up the Express routes and AngularJS controllers. 
+We will be using Node.js to set up the Express routes and AngularJS controllers so we run:
 
-`sudo apt install node.js -y`
-
-Now we will proceed to install MongoDB.
+`sudo apt install nodejs -y`
 
 ### Installing MongoDB
 
@@ -48,15 +79,15 @@ To install MongoDB we use:
 
 Then we start the server:
 
-`sudo service mongodb start`. 
+`sudo service mongodb start` 
 
 We verify that the service is running:
 
  `sudo systemctl status mongodb`
 
-![mongodb-status](./images/mongodb-status.png)
+![mongodb-status](./images/status-mongodb.png)
 
-Then we install npm – Node package manager: 
+Then we install npm (Node Package Manager): 
 
 `sudo apt install -y npm`
 
@@ -80,7 +111,7 @@ In our root directory 'Books' we create a file named 'server.js':
 
 `vi server.js`
 
-We input the following code in it:
+We input or paste the following code in it:
 
 ![server.js](./images/books.png)
 
@@ -103,20 +134,20 @@ Then we create a file named routes.js:
 
 `vi routes.js`
 
-we input the following code into routes.js:
+We input or paste the following code into routes.js:
 
 ![routes.js](./images/books-apps.png)
 
 
-In the 'apps' folder, we create a folder named models
+In the 'apps' folder, we create a folder named models:
 
 `mkdir models && cd models`
 
-In the models folder we create a file named book.js
+In the models folder we create a file named book.js:
 
 `mkdir book.js`
 
-We input the following code into book.js
+We input or paste the following code into book.js:
 
 ![book.js](./images/books-apps-models.png)
 
@@ -126,13 +157,19 @@ We input the following code into book.js
 
 AngularJS provides a web framework for creating dynamic views in your web applications. In this tutorial, we use AngularJS to connect our web page with Express and perform actions on our book register.
 
-So we change the directory back to 'Books'
+So we change the directory back to 'Books':
 
 `cd ../..`
 
-And create a folder named 'public' `mkdir public` and add a file to it named 'script.js' `vi script.js`
+And create a folder named 'public':
 
-Input the following code into our script.js file
+`mkdir public`
+
+Then we add a file to it named 'script.js' 
+
+`vi script.js`
+
+We input or paste the following code into our script.js file:
 
 ![script.js](./images/books-public.png)
 
@@ -140,15 +177,16 @@ In our public folder, we also create a file named 'index.html'
 
 `vi index.html`
 
-We paste the following code into it:
+We input or paste the following code into it:
 
 ![index.html](./images/books-public-html.png)
 
 
 ![index.html](./images/books-public-html2.png)
 
+**NOTE**: The identation of the code does not have to be indented as it appears on the picture. The identation can be way simpler and more practical. However, my `vi` text-editor formatted it that way when I pasted it. (I also tried it with `vim` but it formatted it the same way)
 
-Then we change the directory back to 'Books'.
+Then we change the directory back to 'Books':
 
 `cd ..`
 
@@ -163,5 +201,7 @@ So, let's access it from our browser. However, before doing that, we will need t
 ![EC2 port 3300](./images/tcp-3300.png)
 
 Ultimately, we access our book register web application from the internet with our browser using our EC2 instance's Public IP address or Public DNS name. 'http://localhost:3300'.
+
+**NOTE**: Your localhost is your EC2 instance public-ipv4-address.
 
 ![book register website](./images/book-register-website.png)
