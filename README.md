@@ -37,7 +37,7 @@ https://www.clickittech.com/aws/connect-ec2-instance-using-ssh/
 
 We can see on the images below how to SSH into our EC2 instance:
 
-- We start out instance by selecting our instance and the clicking on "Instance State" then Click "Start instance".
+- We start our instance by selecting our instance and the clicking on "Instance State" then Click "Start instance".
 
 - Once our instance is running, we click on connect.
 
