@@ -8,17 +8,17 @@
 
 MEAN STACK is a combination of the following components:
 
-- MongoDB (document based) Stores and allows to retreive data.
+- **MongoDB** (document based) Stores and allows to retreive data.
 
-- Express which is a back-end application framework that makes requests to Database for Reads and Writes.
+- **Express** which is a back-end application framework that makes requests to Database for Reads and Writes.
 
-- Angular (Front-end application framework) – Handles Client and Server Requests.
+- **Angular** (Front-end application framework) – Handles Client and Server Requests.
 
-- Node.js (JavaScript runtime environment) – Accepts requests and displays results to end user. 
+- **Node.js** (JavaScript runtime environment) – Accepts requests and displays results to end user. 
 
-First, we need to create an account on AWS. Then we need to sign into our AWS account and setup a new Elastic Compute Cloud (EC2) instance, "mean-stack" could be our new EC2 instance's name.
+So, first we need to create an account on AWS. Then we need to sign into our AWS account and setup a new Elastic Compute Cloud (EC2) instance, "mean-stack" could be our new EC2 instance's name.
 
-So, we can setup a EC2 free-tier instance such as the: t2.micro family with Ubuntu Server 20.04 LTS HVM.
+We can setup a EC2 free-tier instance such as the: "t2.micro family with Ubuntu Server 20.04 LTS HV".
 
 - As we are setting up our new instance, we give a name to our private key and download it from AWS.
 
