@@ -16,11 +16,13 @@ MEAN STACK is a combination of the following components:
 
 - **Node.js** JavaScript runtime environment that accepts requests and displays results to the end user. 
 
-*So, first we need to create an account on AWS. Then we need to sign into our AWS account and setup a new Elastic Compute Cloud (EC2) instance, "mean-stack" could be our new EC2 instance's name.*
+## Launching and Connecting your EC2 Instance
 
-To do that we click on the search box and type "EC2". Then we click on where it says "Virutal Servers in the Cloud":
+*So, first we need to create an account on AWS. Then we need to sign into our AWS account and setup a new Elastic Compute Cloud (EC2) instance, "mean-stack" can be our new EC2 instance's name.*
 
-![EC2-lookup](./images/EC2-lookup7.png)
+To do that we click on the search box and type "EC2". Then we click on where it says "Virtual Servers in the Cloud":
+
+![EC2-lookup](./images/EC2-lookup4.png)
 
 We can setup a EC2 free-tier instance such as the: "t2.micro family with Ubuntu Server 20.04 LTS HV". To do so we click on "Launch Instance" and select the previous mentioned free-tier instance:
 
