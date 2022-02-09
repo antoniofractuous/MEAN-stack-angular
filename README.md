@@ -20,7 +20,7 @@ MEAN STACK is a combination of the following components:
 
 To do that we click on the search box "EC2" and click where it says "Virutal Servers in the Cloud":
 
-![EC2](./images/ec2-lookup.png)
+![EC2-lookup](./images/EC2-lookup2.png)
 
 We can setup a EC2 free-tier instance such as the: "t2.micro family with Ubuntu Server 20.04 LTS HV". To do so we click on "Launch Instance" and select the previous mentioned free-tier instance:
 
