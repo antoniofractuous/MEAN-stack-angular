@@ -8,7 +8,7 @@
 
 MEAN STACK is a combination of the following components:
 
-- **MongoDB** document based No SQL database program that stores and allows us to retreive data.
+- **MongoDB** document based NoSQL database program that stores and allows us to retreive data.
 
 - **Express** a back-end application framework that makes requests to the database for reads and writes.
 
@@ -20,7 +20,7 @@ MEAN STACK is a combination of the following components:
 
 To do that we click on the search box and type "EC2". Then we click on where it says "Virutal Servers in the Cloud":
 
-![EC2-lookup](./images/EC2-lookup2.png)
+![EC2-lookup](./images/EC2-lookup4.png)
 
 We can setup a EC2 free-tier instance such as the: "t2.micro family with Ubuntu Server 20.04 LTS HV". To do so we click on "Launch Instance" and select the previous mentioned free-tier instance:
 
