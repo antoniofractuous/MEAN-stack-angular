@@ -16,7 +16,7 @@ MEAN STACK is a combination of the following components:
 
 - **Node.js** JavaScript runtime environment that accepts requests and displays results to the end user. 
 
-## Launching and Connecting your EC2 Instance
+## Launching your EC2 Instance
 
 *So, first we need to create an account on AWS. Then we need to sign into our AWS account and setup a new Elastic Compute Cloud (EC2) instance, "mean-stack" can be our new EC2 instance's name.*
 
@@ -24,17 +24,35 @@ To do that we click on the search box and type "EC2". Then we click on where it 
 
 ![EC2-lookup](./images/EC2-lookup4.png)
 
-We can setup a EC2 free-tier instance such as the: "t2.micro family with Ubuntu Server 20.04 LTS HV". To do so we click on "Launch Instance" and select the previous mentioned free-tier instance:
+We can setup an EC2 free-tier instance such as the: "t2.micro family with Ubuntu Server 20.04 LTS HV". To do so we click on "Launch Instance" and select the previously mentioned free-tier instance:
 
 ![launch-instance](./images/launch-instance.png)
 
+![ubuntu](./images/ubuntu-server.png)
+
+![free-tier-instance](./images/free-tier-instance.png)
+
+![configure-security-group](./images/configure-security-group.png)
+
+![create-private-key](./images/create-private-key.png)
+
 - As we are setting up our new instance, we give a name to our private key and download it from AWS.
 
-- Then we connect to our new instance through our terminal.
+- We choose a new security group with default settings. These settings can always be changed in the future. Then we allow access from all IP addresses, this is ideal for testing purposes only.
+
+- Once our instance is up and running, we connect to it using our terminal.
+
+**NOTE**: *.pem stands for "Privacy Enhanced Mail" which a file format that supports encryption, digital signatures and digital certificates as well as private and public key methods.*
+
+**NOTE**: *Ubuntu is one of many Linux distributions*
+
+## Connecting to your EC2 Instance
 
 If you have macOS you can just press 'cmd spacebar' and type in 'terminal' to open the terminal.
 
-If you have Windows you will need to download an SSH client such as "Putty"or "MobaXterm" from their website. The following website includes information you on how to do so: 
+If you have Windows you will need to download an SSH client such as "Putty"or "MobaXterm". You can download any of these by typing "Putty"or "MobaXterm" on Google so can download whichever you prefer from their website. 
+
+The following website includes information you on how to do the next steps after you have downloaded your SSH client on Windows: 
 
 https://www.clickittech.com/aws/connect-ec2-instance-using-ssh/
 
@@ -42,11 +60,11 @@ https://www.clickittech.com/aws/connect-ec2-instance-using-ssh/
 
 ![ipv4](./images/ipv4.png)
 
-We can see on the images below how to SSH into our EC2 instance:
+We can see on the images below how to SSH into our EC2 instance using macOS:
 
-- We start our instance by selecting our instance and the clicking on "Instance State" then Click "Start instance".
+- We start our instance by selecting our instance and the clicking on "Instance State" then we click "Start instance".
 
-- Once our instance is running, we click on connect.
+- Once our instance is up and running, we select it and click on connect.
 
 ![start-instance](./images/start-instance.png)
 
@@ -56,7 +74,7 @@ We can see on the images below how to SSH into our EC2 instance:
 
 ![ssh](./images/ssh-connect.png)
 
-Once we have copied the SSH command, we change directories to our Downloads folder because that is where our private key is located. So we run:
+Once we have copied the SSH command, we change directories to our Downloads folder because that is where our private key is located. Then we run:
 
 `cd Downloads`
 
@@ -70,9 +88,9 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 - `ssh`: Means 'secure shell' and it is a protocol used to securely connect to a remote server/system.
 
-- `-i`: Flag that specifies an alternate identification file to use for public key authentication.
+- `-i`: Is a flag that specifies an alternate identification file to use for public key authentication.
 
-**NOTE**: *You can use either your EC2 instance's public address or DNS name.*
+**NOTE**: *You can either use your EC2 instance's public ip address or DNS name.*
 
  So, once we SSH into our EC2 instance, we update the list of available packages:
 
@@ -134,7 +152,7 @@ In our root directory 'Books' we create a file named 'server.js':
 
 We input or paste the following code in it:
 
-![server.js](./images/books.png)
+![server.js](./images/books2.png)
 
 
 ### Installing Express and Set Up Routes to the Server
@@ -227,4 +245,4 @@ Ultimately, we access our book register web application from the internet with o
 
 ![book register website](./images/book-register-website.png)
 
- Congrats!! We have just implemented a simple book register web form using a MEAN stack!
+ Congrats!! You have just implemented a simple book register web form using a MEAN stack!
