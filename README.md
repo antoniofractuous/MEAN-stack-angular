@@ -24,21 +24,21 @@ To do that we click on the search box and type "EC2". Then we click on where it 
 
 ![EC2-lookup](./images/EC2-lookup4.png)
 
-We can setup an EC2 free-tier instance such as the: "t2.micro family with Ubuntu Server 20.04 LTS HV". To do so we click on "Launch Instance" and select the previously mentioned free-tier instance. You can see steps of the process on the images listed below:
+We can setup an EC2 free-tier instance such as the: "t2.micro family with Ubuntu Server 20.04 LTS HV". To do so we click on "Launch Instance" and select the previously mentioned free-tier instance. We can see steps of the process on the images listed below:
 
 ![launch-instance](./images/launch-instance.png)
 
 ![ubuntu](./images/ubuntu-server.png)
 
-![free-tier-instance](./images/free-tier-instance.png)
+![free-tier-instance](./images/free-tier-instance2.png)
 
-![configure-security-group](./images/configure-security-group.png)
+![configure-security-group](./images/configure-security-group2.png)
 
-![create-private-key](./images/create-private-key.png)
+![create-private-key](./images/create-private-key2.png)
 
-- As we are setting up our new instance, we give a name to our private key and download it from AWS.
+- As we are setting up our new instance, we give a name to our private key using a ".pem" file format and download it from AWS.
 
-- We choose a new security group with default settings. Keep in mind that these settings can always be changed in the future. Then we allow access from all IP addresses, this is ideal for testing purposes only.
+- We choose a new security group with default settings. Keep in mind that these settings can be changed in the future. Then we allow access from all IP addresses, this is ideal for testing purposes only.
 
 - Once our instance is up and running, we connect to it using our terminal.
 
@@ -56,7 +56,7 @@ The following website includes information you on how to do the next steps after
 
 https://www.clickittech.com/aws/connect-ec2-instance-using-ssh/
 
-**NOTE**: You can get your ipv4 (public-ip address) from AWS:
+**NOTE**: *You can get your ipv4 (public-ip address) from AWS:*
 
 ![ipv4](./images/ipv4.png)
 
@@ -74,7 +74,7 @@ We can see on the images below how to SSH into our EC2 instance using macOS:
 
 ![ssh](./images/ssh-connect.png)
 
-Once we have copied the SSH command, we change directories to our Downloads folder because that is where our private key is located. Then we run:
+Once we have copied the SSH command, we change directories to our Downloads folder because that is where our private key is located. So on our terminal we run:
 
 `cd Downloads`
 
