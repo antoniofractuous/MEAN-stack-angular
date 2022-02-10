@@ -24,7 +24,7 @@ To do that we click on the search box and type "EC2". Then we click on where it 
 
 ![EC2-lookup](./images/EC2-lookup4.png)
 
-We can setup an EC2 free-tier instance such as the: "t2.micro family with Ubuntu Server 20.04 LTS HV". To do so we click on "Launch Instance" and select the previously mentioned free-tier instance:
+We can setup an EC2 free-tier instance such as the: "t2.micro family with Ubuntu Server 20.04 LTS HV". To do so we click on "Launch Instance" and select the previously mentioned free-tier instance. You can see steps of the process on the images listed below:
 
 ![launch-instance](./images/launch-instance.png)
 
@@ -38,7 +38,7 @@ We can setup an EC2 free-tier instance such as the: "t2.micro family with Ubuntu
 
 - As we are setting up our new instance, we give a name to our private key and download it from AWS.
 
-- We choose a new security group with default settings. These settings can always be changed in the future. Then we allow access from all IP addresses, this is ideal for testing purposes only.
+- We choose a new security group with default settings. Keep in mind that these settings can always be changed in the future. Then we allow access from all IP addresses, this is ideal for testing purposes only.
 
 - Once our instance is up and running, we connect to it using our terminal.
 
@@ -152,8 +152,7 @@ In our root directory 'Books' we create a file named 'server.js':
 
 We input or paste the following code in it:
 
-![server.js](./images/books2.png)
-
+![server.js](./images/books4.png)
 
 ### Installing Express and Set Up Routes to the Server
 
