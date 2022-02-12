@@ -98,8 +98,6 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 **NOTE**: *You can either use your EC2 instance's public ip address or DNS name.*
 
-Private keys should only be shared with the key's generator or parties authorized to decrypt the data.
-
  So, once we SSH into our EC2 instance, we update the list of available packages:
 
 `sudo apt update`
@@ -132,7 +130,7 @@ We verify that the service is running:
 
  `sudo systemctl status mongodb`
 
-![mongodb-status](./images/status-mongodb4.png)
+![mongodb-status](./images/status-mongodb8.png)
 
 Then we install npm (Node Package Manager): 
 
