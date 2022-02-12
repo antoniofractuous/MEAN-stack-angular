@@ -92,27 +92,28 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 - `private-key`: Is a variable in cryptography that is used with an algorithm to encrypt and decrypt data. Private keys should only be shared with the key's generator or parties authorized to decrypt the data.
 
-- `username`: The Linux distribution that you are using.
+- `username`: The Linux distribution that you are using. In this case we are using "Ubuntu".
 
 - `ipv4`: Is the public IP of your EC2 instance. It is the underlying technology that makes it possible for us to connect our devices to the web.
 
 **NOTE**: *You can either use your EC2 instance's public ip address or DNS name.*
 
- So, once we SSH into our EC2 instance, we update the list of available packages:
+## Updating your EC2 Instance
+ So, once we SSH into our EC2 instance we update the list of available packages:
 
 `sudo apt update`
 
-We install newer version of the packages we have:
+Then we install a newer version of the packages we have:
 
 `sudo apt upgrade`
 
-### **Installing Node.js** 
+## Installing Node.js
 
 We will be using Node.js to set up the Express routes and AngularJS controllers so we run:
 
 `sudo apt install nodejs -y`
 
-### Installing MongoDB
+## Installing MongoDB
 
 MongoDB stores our data in JSON-like documents.
 
@@ -130,9 +131,9 @@ We verify that the service is running:
 
  `sudo systemctl status mongodb`
 
-![mongodb-status](./images/status-mongodb8.png)
+![mongodb-status](./images/status-mongodb2.png)
 
-Then we install npm (Node Package Manager): 
+## Installing Node Package Manager 
 
 `sudo apt install -y npm`
 
@@ -160,7 +161,7 @@ We input or paste the following code in it:
 
 ![server.js](./images/books4.png)
 
-### Installing Express and Set Up Routes to the Server
+## Installing Express and Setting Up Routes to the Server
 
 Express is a minimal and flexible Node.js web application framework that provides features for web and mobile applications. We will use Express to pass book information to and from our MongoDB database.
 
@@ -195,11 +196,9 @@ We input or paste the following code into book.js:
 
 ![book.js](./images/books-apps-models.png)
 
+## Accessing Routes with AngularJS
 
-### Accessing the routes with AngularJS
-
-
-AngularJS provides a web framework for creating dynamic views in your web applications. In this tutorial, we use AngularJS to connect our web page with Express and perform actions on our book register.
+AngularJS provides a web framework for creating dynamic views in our web applications. In this tutorial, we will use AngularJS to connect our web page with Express and perform actions on our book register.
 
 So we change the directory back to 'Books':
 
@@ -234,19 +233,21 @@ Then we change the directory back to 'Books':
 
 `cd ..`
 
-And we start the server by running:
+## Starting the Node Server
+
+So, after changing directories to 'Books' we start our server by running:
 
 `node server.js`
 
 The server is now up and running, we can connect it via port 3300.
 
-So, let's access it from our browser. However, before doing that, we will need to open a TCP on port 3300 in our AWS Web Console for our EC2 instance and allow access from anywhere. (not ideal for security reasons, but it is good for testing)
+Let's access it from our browser. However, before doing that, we will need to open a TCP on port 3300 in our AWS Web Console for our EC2 instance and allow access from anywhere. (not ideal for security reasons, but it is good for testing purposes)
 
 ![EC2 port 3300](./images/tcp-3300.png)
 
 Ultimately, we access our book register web application from the internet with our browser using our EC2 instance's Public IP address or Public DNS name. 'http://localhost:3300'.
 
-**NOTE**: Your localhost is your EC2 instance public-ipv4-address.
+**NOTE**: *Your localhost is your EC2 instance public-ipv4-address.*
 
 ![book register website](./images/book-register-website.png)
 
