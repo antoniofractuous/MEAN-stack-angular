@@ -90,7 +90,7 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 - `-i`: Is a flag that specifies an alternate identification file to use for public key authentication.
 
-- `private-key`: Is a variable in cryptography that is used with an algorithm to encrypt and decrypt data.
+- `private-key`: Is a variable in cryptography that is used with an algorithm to encrypt and decrypt data. Private keys should only be shared with the key's generator or parties authorized to decrypt the data.
 
 - `username`: The Linux distribution that you are using.
 
@@ -98,7 +98,7 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 **NOTE**: *You can either use your EC2 instance's public ip address or DNS name.*
 
-**NOTE**: *Private keys should only be shared with the key's generator or parties authorized to decrypt the data.*
+Private keys should only be shared with the key's generator or parties authorized to decrypt the data.
 
  So, once we SSH into our EC2 instance, we update the list of available packages:
 
@@ -132,7 +132,7 @@ We verify that the service is running:
 
  `sudo systemctl status mongodb`
 
-![mongodb-status](./images/status-mongodb2.png)
+![mongodb-status](./images/status-mongodb4.png)
 
 Then we install npm (Node Package Manager): 
 
