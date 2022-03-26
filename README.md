@@ -20,7 +20,7 @@ MEAN STACK is a combination of the following components:
 
 So, first we need to create an account on AWS. Then we need to sign into our AWS account and setup a new Elastic Compute Cloud (EC2) instance, "mean-stack" can be our new EC2 instance's name.
 
-To do that we click on the search box and type "EC2". Then we click on where it says "Virtual Servers in the Cloud":
+To do that we click on the search box and type "EC2". Then we click on where it says "EC2 Virtual Servers in the Cloud":
 
 ![EC2-lookup](./images/EC2-lookup4.png)
 
