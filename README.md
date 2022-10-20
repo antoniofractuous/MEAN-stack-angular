@@ -1,6 +1,6 @@
 # MEAN-stack-angular
 
-*Demonstration of how to implement a simple book register web form using a MEAN stack. The source code used on this project was retrieved from darey.io.*
+*Demonstration of how to implement a simple book register web form using a MEAN stack.*
 
     Happy learning!
 
