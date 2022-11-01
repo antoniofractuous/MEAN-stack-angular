@@ -247,7 +247,7 @@ Let's access it from our browser. However, before doing that, we will need to op
 
 Ultimately, we access our book register web application from the internet with our browser using our EC2 instance's Public IP address or Public DNS name. 'http://localhost:3300'.
 
-**NOTE**: *Your localhost is your EC2 instance public-ipv4-address.*
+**NOTE**: *Replace 'localhost' with your EC2 instance public-ipv4-address.*
 
 ![book register website](./images/book-register-website.png)
 
