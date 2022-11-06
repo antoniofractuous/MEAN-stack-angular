@@ -105,7 +105,7 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 **NOTE**: *You can either use your EC2 instance's public ip address or DNS name.*
 
 ## Updating your EC2 Instance
- So, once we SSH into our EC2 instance we update the list of available packages:
+ So, once we SSH into our EC2 instance we update and upgrade the list of available packages:
 
 `sudo apt update`
 
