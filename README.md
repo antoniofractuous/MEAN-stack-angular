@@ -54,7 +54,7 @@ If you have macOS you can just press 'cmd spacebar' and type in 'terminal' to op
 
 If you have Windows you will need to download an SSH client such as "Putty"or "MobaXterm". You can download any of these by typing "Putty"or "MobaXterm" on Google. 
 
-The following website includes information you on how to do the next steps after you have downloaded your SSH client on Windows: 
+The following website includes information for the next steps after you have downloaded your SSH client on Windows: 
 
 https://www.clickittech.com/aws/connect-ec2-instance-using-ssh/
 
