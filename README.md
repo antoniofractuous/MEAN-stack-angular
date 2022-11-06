@@ -2,6 +2,8 @@
 
 *Demonstration of how to implement a simple book register web form using a MEAN stack.*
 
+![book register website](./images/book-register-website.png)
+
     Happy learning!
 
 ## MEAN STACK
@@ -250,5 +252,3 @@ Ultimately, we access our book register web application from the internet with o
 **NOTE**: *Replace 'localhost' with your EC2 instance public-ipv4-address.*
 
 ![book register website](./images/book-register-website.png)
-
- Congrats!! You have just implemented a simple book register web form using a MEAN stack!
