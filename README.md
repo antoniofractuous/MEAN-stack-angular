@@ -109,8 +109,6 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 `sudo apt update`
 
-Then we install a newer version of the packages we have:
-
 `sudo apt upgrade`
 
 ## Installing Node.js
