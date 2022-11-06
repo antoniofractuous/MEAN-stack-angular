@@ -94,7 +94,7 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 - `web-server`: The name of your .pem file. 
 
-- `.pem:` is a file format for encoding keys and certificates. You downloaded the .pem file from AWS when you launched your EC2 instance which contained a public key-pair. Downloading a .pem file is a one time download, so you need to make sure that you do not to delete or lose it in the future since you will need the .pem file to connect remotely to your instance.
+- `.pem:` is a file format for encoding keys and certificates. You downloaded the .pem file from AWS when you launched your EC2 instance. The .pem file contains a public key-pair. Downloading a .pem file is a one time download, so you need to make sure that you do not to delete or lose it in the future since you will need the .pem file to connect remotely to your instance. You also need to know the directory where your .pem file is located at.
 
 **NOTE**: a public key-pair involves a public key and a private key which are associated with an entity that needs to authenticate its identity electronically or to sign or encrypt data. Each public key is published and the corresponding private key is kept secret. Data that is encrypted with the public key can be decrypted only with the corresponding private key.
 
