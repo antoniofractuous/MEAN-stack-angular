@@ -86,7 +86,7 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 **NOTE**: Here is an explanation of the SSH command:
 
-`ssh -i "private-key.pem" username@ipv4`
+`ssh -i "private-key.pem" ubuntu@ipv4`
 
 - `ssh`: Means 'secure shell' and it is a protocol used to securely connect to a remote server/system.
 
@@ -94,13 +94,13 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 - `private-key`: The name of your .pem file. 
 
-- .pem: is base64 container format for encoding keys and certificates. You download a .pem file from AWS when you created your key-pair. This is only a one time download and you cannot download it again.
+- `.pem:` is base64 container format for encoding keys and certificates. You downloaded a .pem file from AWS when you created your public key-pair. This is only a one time download and you cannot download it again.
 
-**NOTE**: A private key is a variable in cryptography that is used with an algorithm to encrypt and decrypt data. Private keys should only be shared with the key's generator or parties authorized to decrypt the data.
+**NOTE**: a public key-pair involves a public key and a private key which are associated with an entity that needs to authenticate its identity electronically or to sign or encrypt data. Each public key is published and the corresponding private key is kept secret. Data that is encrypted with the public key can be decrypted only with the corresponding private key.
 
-- `username`: The Linux distribution that you are using. In this case we are using "Ubuntu".
+- `ubuntu`: The Linux distribution that you are using which in this case is "Ubuntu".
 
-- `ipv4`: Is the public IP of your EC2 instance. It is the underlying technology that makes it possible for us to connect our devices to the web.
+- `ipv4`: Is the public IP of your EC2 instance. It is the underlying technology that makes it possible for us to connect our devices on the web.
 
 **NOTE**: *You can either use your EC2 instance's public ip address or DNS name.*
 
