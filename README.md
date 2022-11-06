@@ -80,7 +80,7 @@ Once we have copied the SSH command, we change directories to our Downloads fold
 
 `cd Downloads`
 
-We paste the SSH command into our terminal, then we input yes. If this is the first time that you are doing this, congratulations!! You have just launched your first server in the clouds!
+We paste the SSH command into our terminal, then we input yes. If this is the first time that you are doing this, congratulations!! You have just launched your first server on the cloud!
 
 ![EC2-instance](./images/EC2-instance.png)
 
