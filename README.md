@@ -98,7 +98,7 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 **NOTE**: a public key-pair involves a public key and a private key which are associated with an entity that needs to authenticate its identity electronically or to sign or encrypt data. Each public key is published and the corresponding private key is kept secret. Data that is encrypted with the public key can be decrypted only with the corresponding private key.
 
-- `ubuntu`: The Linux distribution that you are using which in this case is "Ubuntu".
+- `ubuntu`: The Linux distribution that you are using which in this case is Ubuntu.
 
 - `18.191.193.88`: Is the public IP or IPv4 of your EC2 instance. It is the underlying technology that makes it possible for us to connect our devices on the internet.
 
