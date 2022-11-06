@@ -92,7 +92,7 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 - `-i`: Selects a file from which the identity (private key) for public key authentication is read.
 
-- `private-key`: The name of your .pem file. 
+- `web-server`: The name of your .pem file. 
 
 - `.pem:` is base64 container format for encoding keys and certificates. You downloaded a .pem file from AWS when you created your public key-pair. This is only a one time download and you cannot download it again.
 
@@ -100,7 +100,7 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 - `ubuntu`: The Linux distribution that you are using which in this case is "Ubuntu".
 
-- `ipv4`: Is the public IP of your EC2 instance. It is the underlying technology that makes it possible for us to connect our devices on the web.
+- `18.191.193.88`: Is the public IP or IPv4 of your EC2 instance. It is the underlying technology that makes it possible for us to connect our devices on the internet.
 
 **NOTE**: *You can either use your EC2 instance's public ip address or DNS name.*
 
