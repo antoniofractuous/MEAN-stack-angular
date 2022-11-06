@@ -86,7 +86,7 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 **NOTE**: Here is an explanation of the SSH command:
 
-`ssh -i "private-key.pem" ubuntu@ipv4`
+`ssh -i "web-server.pem" ubuntu@18.191.193.88`
 
 - `ssh`: Means 'secure shell' and it is a protocol used to securely connect to a remote server/system.
 
