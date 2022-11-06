@@ -90,9 +90,13 @@ We paste the SSH command into our terminal, then we input yes. If this is the fi
 
 - `ssh`: Means 'secure shell' and it is a protocol used to securely connect to a remote server/system.
 
-- `-i`: Is a flag that specifies an alternate identification file to use for public key authentication.
+- `-i`: Selects a file from which the identity (private key) for public key authentication is read.
 
-- `private-key`: Is a variable in cryptography that is used with an algorithm to encrypt and decrypt data. Private keys should only be shared with the key's generator or parties authorized to decrypt the data.
+- `private-key`: The name of your .pem file. 
+
+- .pem: is base64 container format for encoding keys and certificates. You download a .pem file from AWS when you created your key-pair. This is only a one time download and you cannot download it again.
+
+**NOTE**: A private key is a variable in cryptography that is used with an algorithm to encrypt and decrypt data. Private keys should only be shared with the key's generator or parties authorized to decrypt the data.
 
 - `username`: The Linux distribution that you are using. In this case we are using "Ubuntu".
 
