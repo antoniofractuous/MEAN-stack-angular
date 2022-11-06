@@ -52,7 +52,7 @@ We can setup an EC2 free-tier instance such as the: "t2.micro family with Ubuntu
 
 If you have macOS you can just press 'cmd spacebar' and type in 'terminal' to open the terminal.
 
-If you have Windows you will need to download an SSH client such as "Putty"or "MobaXterm". You can download any of these by typing "Putty"or "MobaXterm" on Google so can download whichever you prefer from their website. 
+If you have Windows you will need to download an SSH client such as "Putty"or "MobaXterm". You can download any of these by typing "Putty"or "MobaXterm" on Google. 
 
 The following website includes information you on how to do the next steps after you have downloaded your SSH client on Windows: 
 
