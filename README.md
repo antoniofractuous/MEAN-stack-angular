@@ -1,4 +1,4 @@
-# MEAN-stack
+# MEAN STACK
 
 *Demonstration of how to implement a simple book register web form using a MEAN stack.*
 
