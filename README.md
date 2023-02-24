@@ -14,7 +14,7 @@ MEAN STACK is a combination of the following components:
 
 - **Express.js** back-end application framework that will make requests to the database for reads and writes (RESTful APIs).
 
-- **Angular** structural framework for dynamic web applications.
+- **AngularJS** structural framework for dynamic web applications.
 
 - **Node.js** JavaScript runtime environment that accepts requests and displays results to the end user. 
 
