@@ -125,7 +125,7 @@ In this case we will be adding book records to our MongoDB that contain the foll
 
 To install MongoDB we use:
 
-`sudo apt mongodb -y`
+`sudo apt install mongodb -y`
 
 Then we start the server:
 
