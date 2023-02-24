@@ -12,7 +12,7 @@ MEAN STACK is a combination of the following components:
 
 - **MongoDB** document based NoSQL database program that stores and allows us to retreive data.
 
-- **Express** a back-end application framework that makes requests to the database for reads and writes.
+- **Express.js** back-end application framework that will make requests to the database for reads and writes (RESTful APIs).
 
 - **Angular** structural framework for dynamic web applications.
 
